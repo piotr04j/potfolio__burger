@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="RWD, sass, css3, gulp, html5, javascript, portoflio">
+	<meta name="author" content="Piotr Jałocha">
+	<title>Burger</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet"> 
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<script src="script/map.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsLYzoqLumXC0HLY5HGUsh_MKeg786oMM&callback=init" type="text/javascript"></script>
+</head>
+<body>
+<!-- ----------------------------- header ---------------------->
+	<header class="container-fluid header">
+		<div class="row">
+			<div class="col-3">
+				<img src="img/header/logo.png" alt="logo" class="header__logo">
+			</div>
+			<div class="col-8">
+				<nav class="nav">
+					<ul class="nav__list">
+						<li class="nav__list__item">
+							<a href="#burgers" class="nav__list__item__link">burgers</a>
+						</li>
+						<li class="nav__list__item">
+							<a href="#best" class="nav__list__item__link">
+								the best
+							</a>
+						</li>
+						<li class="nav__list__item">
+							<a href="#map" class="nav__list__item__link">
+								find us
+							</a>
+						</li>
+						<li class="nav__list__item">
+							<a href="#contact" class="nav__list__item__link">contact</a>
+						</li>
+					</ul>
+				</nav>
+				<p class="header__menu"><i class="ion-navicon-round header__menu__button"></i></p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<h1 class="header__title">-introducing- <span class="header__title--down">FATTY BURGER</span></h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-7">
+				<p class="header__title__text">A double layer of sear-sizzled 100% pure beef mingled with special sauce on a sesame seed bun and topped with melty American cheese, minced onions and tangy pickles.</p>
+				<p class="header__title__text">*Based on pre-cooked patty weight.</p>
+			</div>
+			<div class="col-5">
+				<img src="img/header/stamp.png" logo="stamp" class="header__title__stamp">
+			</div>
+		</div>
+	</header>
+<!-- ----------------------------- offert ---------------------->
+	<div class="container offert" id="burgers">
+		<div class="row">
+			<div class="col-md-8 col-12">
+				<div class="offert__food__one">
+					<div class="offert__food__container__one">
+						<img src="img/offerts/chicken.png" alt="chicken stamp" class="offert__food__one__stamp">
+						<h2 class="offert__food__one__title">Shack Burger </h2>
+						<p class="offert__food__one__text">Black Angus beef patty topped with American cheese, tomato, lettuce, and “Shack Sauce,” served in a grilled potato bun</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-12">
+				<div class="offert__food__two">
+					<div class="offert__food__container__two">
+						<div class="offert__food__two__flag">
+							<img src="img/offerts/icon-burger.png" alt="burger icon" class="offert__food__two__stamp">
+							<h2 class="offert__food__two__title">
+								Signature
+							</h2> 
+						</div>
+						<p class="offert__food__two__text">It used to be a Secret but not any more! Our tribute to the King is a Cheddar Beef Patty,</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 col-12">
+				<div class="offert__food__three">
+					<h3 class="offert__food__three__flag">CLASSIC</h3>
+					<div class="offert__food__three__container">
+						<h2 class="offert__food__three__title">House-ground hamburger </h2>
+						<p class="offert__food__three__text">(served in a grilled rosemary focaccia).</p>
+						<p class="offert__food__three__text">Instead of traditional cucumber pickles, legendary chef-owner Judy Rodgers accents her burgers with thin-cut zucchini strips pickled in apple cider vinegar, mustard seeds and turmeric.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col-12">
+				<div class="offert__food__four">
+					<div class="offert__food__four__container offert__food__four__container--one" id="js-offertOne">
+						<h2 class="offert__food__four__title">The Original Burger</h2>
+						<div class="offert__food___four__text">
+							<img src="img/offerts/prot.png" alt="prtoein icon"><p>Protein - 33g</p>
+						</div>
+						<div class="offert__food___four__text">
+							<img src="img/offerts/carbo.png" alt="icon carbohydrates"><p>Carbohydrates - 46gm</p>
+						</div>
+						<div class="offert__food___four__text">
+							<img src="img/offerts/kcal.png" alt="icon kcal"><p>Calories - 750 kcal</p>
+						</div>
+						<p class="offert__food___four__flag">INFO &amp; NUTRITION</p>
+					</div>	
+					<div class="offert__food__four__container offert__food__four__container--two" id="js-offertTwo">
+						<h2 class="offert__food__four__title">The Spicy Burger</h2>
+						<div class="offert__food___four__text">
+							<img src="img/offerts/prot.png" alt="prtoein icon"><p>Protein - 49g</p>
+						</div>
+						<div class="offert__food___four__text">
+							<img src="img/offerts/carbo.png" alt="icon carbohydrates"><p>Carbohydrates - 32gm</p>
+						</div>
+						<div class="offert__food___four__text">
+							<img src="img/offerts/kcal.png" alt="icon kcal"><p>Calories - 820 kcal</p>
+						</div>
+						<p class="offert__food___four__flag">INFO &amp; NUTRITION</p>
+					</div>
+					<div class="offert__food__four__container offert__food__four__container--three" id="js-offertThree">
+						<h2 class="offert__food__four__title">The Fit Burger</h2>
+						<div class="offert__food___four__text">
+							<img src="img/offerts/prot.png" alt="prtoein icon"><p>Protein - 51g</p>
+						</div>
+						<div class="offert__food___four__text">
+							<img src="img/offerts/carbo.png" alt="icon carbohydrates"><p>Carbohydrates - 55gm</p>
+						</div>
+						<div class="offert__food___four__text">
+							<img src="img/offerts/kcal.png" alt="icon kcal"><p>Calories - 610 kcal</p>
+						</div>
+						<p class="offert__food___four__flag">INFO &amp; NUTRITION</p>
+					</div>
+					<div class="offert__food__dots__container">
+						<div class="offert__food__dots active" id="one-btn">
+						</div>
+						<div class="offert__food__dots" id="two-btn">
+						</div>
+						<div class="offert__food__dots" id="three-btn">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- ---------------------------- highlights ------------------->	 
+	<div class="container highlights">
+		<div class="row">
+			<div class="col-12">
+				<div class="highlights__content" id="best">	
+					<h2 class="highlights__content__title">Cheddar JUnky <span>Stuffed Burgers</span></h2>
+					<p class="highlights__content__text">Chef Wesley Genovart makes this over-the-top, Shake Shack–inspired burger with two thin stacked patties, thick-cut bacon, kimchi and a spicy homemade sauce.</p>
+					<p class="highlights__content__flag">INFO &amp; NUTRITION</p>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- ---------------------------- links -----------------------> 	  
+	<div class="container links">
+		<div class="row">
+			<div class="col-sm-4 col-12">
+				<div class="links__item--menu links__item">
+					<a href="#">MENU</a>
+				</div>
+			</div>
+			<div class="col-sm-4 col-12">
+				<div class="links__item--drink links__item">
+					<a href="#">Drinks</a>
+				</div>
+			</div>	
+			<div class="col-sm-4 col-12">
+				<div class="links__item--fries links__item">
+					<a href="#">sides</a>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- --------------------------- banner ------------------------->
+	
+	<div class="container-fluid banner">
+		<div class="row">
+			<div class="col-12">
+			<h2 class="banner__text">SERVING MORE THAN JUST BURGERS SINCE 1998<span>Check out our opening hours and location address below.</span></h2>
+			</div>
+		</div>
+	</div>
+<!-- --------------------------- map ------------------------>
+	
+	<div class="container-fluid map">
+		<div class="row">
+			<div class="col-12">
+				<div class="map__content" id="map"></div>
+			</div>
+		</div>
+	</div>
+	
+<!-- -------------------------footer -------------------->
+	
+	<div class="container-fluid footer" id="contact">
+		<div class="row">
+			<div class="col-sm-4 col-6">
+				<div class="footer__credits">
+					<div class="footer__logo">
+						<img src="img/footer/logo.png" alt="logo">
+					</div>
+					<div class="footer__credits__social"><a href="#" class="footer__credits__social__link"><i class="ion-social-facebook"></i></a>	
+					</div>
+					<div class="footer__credits__social"><a href="#" class="footer__credits__social__link"><i class="ion-social-twitter"></i></a>	
+					</div>
+					<div class="footer__credits__social">
+						<a href="#" class="footer__credits__social__link"><i class="ion-social-instagram"></i></a>	
+					</div>
+					<p class="footer__credits__text">© 2016 Junky Burger All rights reserved Design by Creativegeek.biz | <a href="https://mapicons.mapsmarker.com" class="footer__credits__text__link">Marker</a></p>
+				</div>
+			</div>
+			<div class="col-sm-4 col-6">
+				<div class="footer__contact">
+					<h4 class="footer__contact__title">Contac Us</h4>
+					<a href="mailto:info@junkyburget.com" class="footer__contact__mail">info@junkyburget.com</a>
+					<p class="footer__contact__text">Jalan Awan Hijau, Taman OUG,<span>58200 Kuala Lumpur Malaysia</span></p>
+				</div>
+			</div>
+			<div class="col-sm-4 col-12">
+				<div class="footer__subscribe">
+					<h4 class="footer__subscribe__title">Subscribe now</h4>
+					<p class="footer__subscribe__text">Subscribe to the newsletter and get some crispy stuff every week.</p>
+					<form methode="post" class="footer__subscribe__form"><input type="email" placeholder="Enter your e-mail here" name="email" class="footer__subscribe__form__mail"> <button type="submit" class="footer__subscribe__form__button" ><i class="ion-paper-airplane"></i></button></form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<script src="script/slide.js"></script>	
+<script src="script/menu.js"></script>
+</body>
+</html>
